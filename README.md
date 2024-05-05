@@ -14,8 +14,8 @@ Con esta API, los desarrolladores podrán integrar fácilmente funciones de come
 Permite administrar cada uno de los productos de la plataforma.
 Services requeridos como referencia, es posible que se necesiten algunos adicionales. 
 
-- [ ] Creacion
-- [ ] Edicion
+- [ ] Creación
+- [ ] Edición
 - [ ] Listado
 - [ ] BuscarById
 - [ ] BuscarName
@@ -54,26 +54,26 @@ Dentro de la funcionalidad del carrito de compras debemos permitir las siguiente
 - [ ] Obtener el contenido del carrito: Devuelve la lista de productos en el carrito junto con sus cantidades y precios.
 - [ ] Vaciar el carrito: Elimina todos los productos del carrito.
 - [ ] Calcular el total: Calcula el total de la compra, incluidos los impuestos y los costos de envío si corresponde.
-- [ ] Registrar orden. (OrdenenesVentas)
+- [ ] Registrar orden. (Ordenes de Ventas)
 
-### Ordenenes de Ventas
+### Ordenes de Ventas
 Permite que nuestra api realice ventas de los productos del inventario, debe permitir registrar múltiples productos es decir, que puedo comprar más de un producto en la misma Orden:
 
 Se debe tener en cuenta que al momento de realizar una venta de un producto se debe disminuir la cantidad de productos o stock.
 
 Las acciones son las siguientes
-- [ ] Creacion
-- [ ] Edicion
+- [ ] Creación
+- [ ] Edición
 - [ ] Cancelación
 - [ ] Listar Ordenes
 - [ ] Listar Ordenes con Producto
 
-### Ordenenes de Compras
+### Ordenes de Compras
 Permite que nuestra api realice compras de los productos del inventario, mantener el STOCK actualizado e incrementarlo según el número de ítems comprados.
 
 Las acciones son las siguientes
-- [ ] Creacion
-- [ ] Edicion
+- [ ] Creación
+- [ ] Edición
 - [ ] Cancelación
 - [ ] Listar Ordenes
 
