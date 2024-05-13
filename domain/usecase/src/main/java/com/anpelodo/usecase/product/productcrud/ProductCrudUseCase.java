@@ -1,6 +1,7 @@
 package com.anpelodo.usecase.product.productcrud;
 
 import com.anpelodo.model.product.Product;
+import com.anpelodo.model.product.ProductNotExist;
 import com.anpelodo.model.product.gateways.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
@@ -20,7 +21,7 @@ public class ProductCrudUseCase {
     public Mono<Product> updateProduct(Product product) {
 /* // Only Update info data in database.
         return productRepo.findById(product.getId())
-                .switchIfEmpty(Mono.error(new RuntimeException("Product not found")))
+                .switchIfEmpty(Mono.error(new ProductNotExist(product.getId())))
                 .flatMap(p -> {
                     p.setName(product.getName());
                     p.setDescription(product.getDescription());
@@ -31,7 +32,7 @@ public class ProductCrudUseCase {
 */
         return productRepo.existsById(product.getId())
                 .map(exists -> Boolean.TRUE.equals(exists) ? product : Mono.empty())
-                .switchIfEmpty(Mono.error(new RuntimeException("Product not found")))
+                .switchIfEmpty(Mono.error(new ProductNotExist(product.getId())))
                 .flatMap(p -> productRepo.update(product));
     }
 
@@ -41,7 +42,7 @@ public class ProductCrudUseCase {
 
     public Mono<Product> findProductById(BigInteger id) {
         return productRepo.findById(id)
-                .switchIfEmpty(Mono.error(new RuntimeException("Product not found")));
+                .switchIfEmpty(Mono.error(new ProductNotExist(id)));
     }
 
     public Flux<Product> findProductByName(String name) {
