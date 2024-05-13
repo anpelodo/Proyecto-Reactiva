@@ -14,13 +14,13 @@ Con esta API, los desarrolladores podrán integrar fácilmente funciones de come
 Permite administrar cada uno de los productos de la plataforma.
 Services requeridos como referencia, es posible que se necesiten algunos adicionales. 
 
-- [ ] Creación
-- [ ] Edición
-- [ ] Listado
-- [ ] BuscarById
-- [ ] BuscarName
+- [x] Creación
+- [x] Edición
+- [x] Listado
+- [x] BuscarById
+- [x] BuscarName
 - [ ] ModificarStock
-- [ ] Eliminado
+- [x] Eliminado
 
 Datos básicos de la Clase Producto, Está es una referencia, si es necesario se pueden agregar más propiedades.
 
