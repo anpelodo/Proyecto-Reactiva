@@ -8,6 +8,7 @@ CREATE DATABASE reactive
     IS_TEMPLATE = False;
 
 -- Table creation
+DROP TABLE IF EXISTS public.products;
 CREATE TABLE public.products
 (
     id bigserial NOT NULL,
@@ -22,17 +23,21 @@ CREATE TABLE public.products
 ALTER TABLE IF EXISTS public.products
     OWNER to postgres;
 
-CREATE TABLE public.cart
+DROP TABLE IF EXISTS public.cart_items;
+CREATE TABLE public.cart_items
 (
+    id bigserial NOT NULL DEFAULT,
     user_id bigint NOT NULL,
     product_id bigint NOT NULL,
+	product_price double precision,
     quantity integer NOT NULL DEFAULT 1,
+    PRIMARY KEY (id),
     FOREIGN KEY (product_id)
         REFERENCES public.products (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE CASCADE,
-    CONSTRAINT valid_count CHECK (quantity > 1)
+    CONSTRAINT valid_count CHECK (quantity > 0) NOT VALID
 );
 
-ALTER TABLE IF EXISTS public.cart
+ALTER TABLE IF EXISTS public.cart_items
     OWNER to postgres;

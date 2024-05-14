@@ -48,11 +48,11 @@ Datos básicos de la Clase Producto, Está es una referencia, si es necesario se
 ### Carrito de compras
 Dentro de la funcionalidad del carrito de compras debemos permitir las siguientes acciones o services
 
-- [ ] Agregar un artículo al carrito: Permite a los usuarios agregar productos al carrito de compras.
-- [ ] Eliminar un artículo del carrito: Permite a los usuarios eliminar productos del carrito de compras.
-- [ ] Actualizar la cantidad de un artículo: Permite a los usuarios aumentar o disminuir la cantidad de un producto en el carrito.
-- [ ] Obtener el contenido del carrito: Devuelve la lista de productos en el carrito junto con sus cantidades y precios.
-- [ ] Vaciar el carrito: Elimina todos los productos del carrito.
+- [x] Agregar un artículo al carrito: Permite a los usuarios agregar productos al carrito de compras.
+- [x] Eliminar un artículo del carrito: Permite a los usuarios eliminar productos del carrito de compras.
+- [x] Actualizar la cantidad de un artículo: Permite a los usuarios aumentar o disminuir la cantidad de un producto en el carrito.
+- [x] Obtener el contenido del carrito: Devuelve la lista de productos en el carrito junto con sus cantidades y precios.
+- [x] Vaciar el carrito: Elimina todos los productos del carrito.
 - [ ] Calcular el total: Calcula el total de la compra, incluidos los impuestos y los costos de envío si corresponde.
 - [ ] Registrar orden. (Ordenes de Ventas)
 

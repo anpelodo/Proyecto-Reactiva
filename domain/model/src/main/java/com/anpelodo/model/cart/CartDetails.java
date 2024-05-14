@@ -1,6 +1,8 @@
 package com.anpelodo.model.cart;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -8,7 +10,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class CartDetails {
-     static final double TAX_RATE = 0.1;
+    static final double TAX_RATE = 0.1;
 
     private List<CartItem> list;
     private int productCount;
