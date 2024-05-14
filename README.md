@@ -53,7 +53,7 @@ Dentro de la funcionalidad del carrito de compras debemos permitir las siguiente
 - [x] Actualizar la cantidad de un artículo: Permite a los usuarios aumentar o disminuir la cantidad de un producto en el carrito.
 - [x] Obtener el contenido del carrito: Devuelve la lista de productos en el carrito junto con sus cantidades y precios.
 - [x] Vaciar el carrito: Elimina todos los productos del carrito.
-- [ ] Calcular el total: Calcula el total de la compra, incluidos los impuestos y los costos de envío si corresponde.
+- [x] Calcular el total: Calcula el total de la compra, incluidos los impuestos y los costos de envío si corresponde.
 - [ ] Registrar orden. (Ordenes de Ventas)
 
 ### Ordenes de Ventas
